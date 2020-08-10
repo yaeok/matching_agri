@@ -11,6 +11,8 @@ import Firebase
 
 class MatterListViewController: UIViewController {
     
+    //list
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var postId: String = ""
