@@ -48,17 +48,24 @@ class MatterDetailViewController: UIViewController {
         
     }
     @IBAction func tappedButton(_ sender: Any) {
-        db.collection("matter_Info").document(receiveId).delete()
+        let dialog = UIAlertController(title: "Dialog Title", message: "Message is here", preferredStyle: .actionSheet)
         
-        db.collection("swift_users").document(useId).collection("matter_Info").addDocument(data: [
-            "matter_Title" : receiveTitle,
-            "matter_Address" : receiveAddress,
-            "matter_Date" : receiveDate,
-            "matter_Money" : receiveMoney,
-            "matter_Content" : receiveContent
-        ])
+        dialog.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
-        dismiss(animated: true, completion: nil)
+        self.present(dialog, animated: true, completion: nil)
+          dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            self.db.collection("matter_Info").document(self.receiveId).delete()
+            
+            self.db.collection("swift_users").document(self.useId).collection("matter_Info").addDocument(data: [
+                "matter_Title" : self.receiveTitle,
+                "matter_Address" : self.receiveAddress,
+                "matter_Date" : self.receiveDate,
+                "matter_Money" : self.receiveMoney,
+                "matter_Content" : self.receiveContent
+            ])
+            
+            self.dismiss(animated: true, completion: nil)
+          }))
     }
     
 }
