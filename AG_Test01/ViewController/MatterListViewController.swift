@@ -41,7 +41,7 @@ class MatterListViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 20, left: 27, bottom: 20, right: 27)
         collectionView.collectionViewLayout = layout
             
-        db.collection("matter_Info").getDocuments{ (snaps, error) in
+        db.collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
                     
             } else {
