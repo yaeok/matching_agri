@@ -48,7 +48,7 @@ class MatterDetailViewController: UIViewController {
         
     }
     @IBAction func tappedButton(_ sender: Any) {
-        let dialog = UIAlertController(title: "Dialog Title", message: "Message is here", preferredStyle: .actionSheet)
+        let dialog = UIAlertController(title: "手伝い確認", message: "手伝い予定に入れますか？", preferredStyle: .actionSheet)
         
         dialog.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
