@@ -17,7 +17,6 @@
 		39A04EB824DFB44C00FB59C8 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A04EB624DFB44C00FB59C8 /* MyCollectionViewCell.xib */; };
 		39A04EBA24DFB46A00FB59C8 /* MatterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EB924DFB46A00FB59C8 /* MatterListViewController.swift */; };
 		39A04EBC24DFB47800FB59C8 /* MatterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EBB24DFB47800FB59C8 /* MatterModel.swift */; };
-		39A04EBE24DFB5C700FB59C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39A04EBD24DFB5C700FB59C8 /* GoogleService-Info.plist */; };
 		39A04EC024DFF09C00FB59C8 /* PlanListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EBF24DFF09C00FB59C8 /* PlanListViewController.swift */; };
 		39A04EC224DFF0FE00FB59C8 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EC124DFF0FE00FB59C8 /* PlanTableViewCell.swift */; };
 		39A04EC424DFF10800FB59C8 /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EC324DFF10800FB59C8 /* PlanModel.swift */; };
@@ -30,6 +29,7 @@
 		39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ED224E020E800FB59C8 /* Utilities.swift */; };
 		39E4B51424E0E542002F4F6D /* MatterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */; };
 		39E4B51524E0E542002F4F6D /* MatterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */; };
+		39FB171B24E18AD600AFF851 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,6 @@
 		39A04EB624DFB44C00FB59C8 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		39A04EB924DFB46A00FB59C8 /* MatterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterListViewController.swift; sourceTree = "<group>"; };
 		39A04EBB24DFB47800FB59C8 /* MatterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterModel.swift; sourceTree = "<group>"; };
-		39A04EBD24DFB5C700FB59C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39A04EBF24DFF09C00FB59C8 /* PlanListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListViewController.swift; sourceTree = "<group>"; };
 		39A04EC124DFF0FE00FB59C8 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
 		39A04EC324DFF10800FB59C8 /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		39A04ED224E020E800FB59C8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterCollectionViewCell.swift; sourceTree = "<group>"; };
 		39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatterCollectionViewCell.xib; sourceTree = "<group>"; };
+		39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DCD16CB0FDA970F8363B5EE /* Pods-AG_Test01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AG_Test01.release.xcconfig"; path = "Target Support Files/Pods-AG_Test01/Pods-AG_Test01.release.xcconfig"; sourceTree = "<group>"; };
 		EEDDB0F33DF099B22C5C90D1 /* Pods_AG_Test01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AG_Test01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5324F35F835561BBFE23AC /* Pods-AG_Test01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AG_Test01.debug.xcconfig"; path = "Target Support Files/Pods-AG_Test01/Pods-AG_Test01.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				39A04EA724DFB40C00FB59C8 /* Assets.xcassets */,
 				39A04EA924DFB40C00FB59C8 /* LaunchScreen.storyboard */,
 				39A04EAC24DFB40C00FB59C8 /* Info.plist */,
-				39A04EBD24DFB5C700FB59C8 /* GoogleService-Info.plist */,
+				39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */,
 			);
 			path = AG_Test01;
 			sourceTree = "<group>";
@@ -233,10 +233,10 @@
 			files = (
 				39A04EAB24DFB40C00FB59C8 /* LaunchScreen.storyboard in Resources */,
 				39A04EA824DFB40C00FB59C8 /* Assets.xcassets in Resources */,
-				39A04EBE24DFB5C700FB59C8 /* GoogleService-Info.plist in Resources */,
 				39E4B51524E0E542002F4F6D /* MatterCollectionViewCell.xib in Resources */,
 				39A04EB824DFB44C00FB59C8 /* MyCollectionViewCell.xib in Resources */,
 				39A04EA624DFB40B00FB59C8 /* Main.storyboard in Resources */,
+				39FB171B24E18AD600AFF851 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
