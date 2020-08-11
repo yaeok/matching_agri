@@ -25,41 +25,47 @@
                         <color key="textColor" red="0.2281674645" green="0.34531637679999999" blue="0.098085450769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沖縄市近辺" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKe-cK-kCb">
-                        <rect key="frame" x="40" y="130" width="100" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沖縄市近辺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKe-cK-kCb">
+                        <rect key="frame" x="40" y="130" width="100" height="18"/>
                         <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Ibj-WD-Psz"/>
                             <constraint firstAttribute="width" constant="100" id="mUh-0y-quE"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM 11:00〜(3h)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uQ-xC-ZPt">
-                        <rect key="frame" x="172" y="130" width="200" height="23.5"/>
+                        <rect key="frame" x="172" y="130" width="200" height="18"/>
                         <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Azl-qF-jd6"/>
                             <constraint firstAttribute="width" constant="200" id="dDR-Pa-AVc"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="20"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_155360_256" translatesAutoresizingMaskIntoConstraints="NO" id="Su8-zP-wLe">
-                        <rect key="frame" x="30" y="180" width="60" height="60"/>
+                        <rect key="frame" x="30" y="211" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="5il-4j-6R4"/>
                             <constraint firstAttribute="width" constant="60" id="BEu-dC-UGU"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="NTl-zM-SmF"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="pNK-nH-B3N"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_103500_256" translatesAutoresizingMaskIntoConstraints="NO" id="BTc-bS-C61">
-                        <rect key="frame" x="30" y="270" width="60" height="60"/>
+                        <rect key="frame" x="30" y="291" width="60" height="60"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="61r-Ba-XpV"/>
                             <constraint firstAttribute="width" constant="60" id="fcd-cZ-0ue"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="hXJ-CU-yj6"/>
                             <constraint firstAttribute="height" constant="60" id="pwB-d6-YLx"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000円/1h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-5g-d2V">
-                        <rect key="frame" x="130" y="270" width="242" height="60"/>
+                        <rect key="frame" x="130" y="291" width="242" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="DTv-tZ-Ecm"/>
                         </constraints>
@@ -67,9 +73,38 @@
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwC-C2-2a8">
-                        <rect key="frame" x="30" y="333" width="342" height="100"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-nk-LLx">
+                        <rect key="frame" x="130" y="211" width="242" height="60"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="242" id="BEn-qq-PRw"/>
+                            <constraint firstAttribute="height" constant="60" id="rG0-cm-kwc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM 11:00~(3h)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtX-zM-FK9">
+                        <rect key="frame" x="172" y="163" width="200" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="B0l-3e-gKr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開始時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6We-FP-Ogt">
+                        <rect key="frame" x="40" y="163" width="100" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Z9u-cq-gp1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwC-C2-2a8">
+                        <rect key="frame" x="30" y="361" width="342" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="BFK-ql-KTI"/>
                             <constraint firstAttribute="height" constant="100" id="SHT-QY-2KB"/>
                         </constraints>
                         <string key="text">・当日は動きやすい格好
@@ -79,38 +114,32 @@
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-nk-LLx">
-                        <rect key="frame" x="130" y="180" width="242" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="rG0-cm-kwc"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Uya-5g-d2V" firstAttribute="top" secondItem="YDw-nk-LLx" secondAttribute="bottom" constant="30" id="5to-w3-90n"/>
-                <constraint firstItem="Uya-5g-d2V" firstAttribute="leading" secondItem="BTc-bS-C61" secondAttribute="trailing" constant="40" id="7N3-qU-E2W"/>
-                <constraint firstItem="YDw-nk-LLx" firstAttribute="leading" secondItem="Su8-zP-wLe" secondAttribute="trailing" constant="40" id="8vP-FT-SdN"/>
-                <constraint firstItem="KwC-C2-2a8" firstAttribute="top" secondItem="BTc-bS-C61" secondAttribute="bottom" constant="3" id="Kr1-kz-yRt"/>
-                <constraint firstItem="YKe-cK-kCb" firstAttribute="top" secondItem="MhW-kG-wGm" secondAttribute="bottom" constant="20" id="LaU-IM-eRg"/>
-                <constraint firstAttribute="trailing" secondItem="KwC-C2-2a8" secondAttribute="trailing" constant="10" id="MFi-ws-gEg"/>
-                <constraint firstItem="YKe-cK-kCb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="Qc1-zw-dUB"/>
-                <constraint firstAttribute="trailing" secondItem="YDw-nk-LLx" secondAttribute="trailing" constant="10" id="UgJ-DM-AT5"/>
-                <constraint firstAttribute="trailing" secondItem="5uQ-xC-ZPt" secondAttribute="trailing" constant="10" id="Vuf-a8-ZoW"/>
-                <constraint firstItem="Su8-zP-wLe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="WGK-sX-ybu"/>
-                <constraint firstItem="Su8-zP-wLe" firstAttribute="top" secondItem="YKe-cK-kCb" secondAttribute="bottom" constant="30" id="YVO-ai-KIK"/>
-                <constraint firstAttribute="trailing" secondItem="Uya-5g-d2V" secondAttribute="trailing" constant="10" id="ZKf-yj-Wjf"/>
-                <constraint firstItem="KwC-C2-2a8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="kbb-OI-zv5"/>
-                <constraint firstItem="BTc-bS-C61" firstAttribute="top" secondItem="YDw-nk-LLx" secondAttribute="bottom" constant="30" id="mp1-wE-3JR"/>
-                <constraint firstItem="YDw-nk-LLx" firstAttribute="top" secondItem="YKe-cK-kCb" secondAttribute="bottom" constant="30" id="s4C-ra-Hu5"/>
-                <constraint firstItem="BTc-bS-C61" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="shW-to-Oar"/>
-                <constraint firstItem="5uQ-xC-ZPt" firstAttribute="top" secondItem="MhW-kG-wGm" secondAttribute="bottom" constant="20" id="svk-C1-trQ"/>
-                <constraint firstAttribute="trailing" secondItem="MhW-kG-wGm" secondAttribute="trailing" constant="10" id="u6y-Y1-uKT"/>
-                <constraint firstItem="MhW-kG-wGm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="uWv-kI-RWP"/>
-                <constraint firstItem="MhW-kG-wGm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wVh-hb-dmN"/>
+                <constraint firstItem="YKe-cK-kCb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="2ln-sE-v0y"/>
+                <constraint firstItem="KwC-C2-2a8" firstAttribute="top" secondItem="BTc-bS-C61" secondAttribute="bottom" constant="10" id="3m6-Dj-v4U"/>
+                <constraint firstItem="MhW-kG-wGm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3w5-Gn-kiu"/>
+                <constraint firstItem="BTc-bS-C61" firstAttribute="top" secondItem="YDw-nk-LLx" secondAttribute="bottom" constant="20" id="CAT-qC-dzd"/>
+                <constraint firstAttribute="trailing" secondItem="5uQ-xC-ZPt" secondAttribute="trailing" constant="10" id="CNW-rf-9ul"/>
+                <constraint firstAttribute="trailing" secondItem="KwC-C2-2a8" secondAttribute="trailing" constant="10" id="FLd-Bw-Od8"/>
+                <constraint firstItem="Uya-5g-d2V" firstAttribute="leading" secondItem="BTc-bS-C61" secondAttribute="trailing" constant="40" id="HMm-Kf-wud"/>
+                <constraint firstItem="MhW-kG-wGm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="PCq-1G-Cdt"/>
+                <constraint firstAttribute="trailing" secondItem="HtX-zM-FK9" secondAttribute="trailing" constant="10" id="TUM-Dc-WIk"/>
+                <constraint firstItem="Su8-zP-wLe" firstAttribute="top" secondItem="6We-FP-Ogt" secondAttribute="bottom" constant="30" id="WHR-H1-FWx"/>
+                <constraint firstItem="Su8-zP-wLe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Wg9-9N-Vyx"/>
+                <constraint firstItem="6We-FP-Ogt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="Xu4-68-NwG"/>
+                <constraint firstItem="5uQ-xC-ZPt" firstAttribute="top" secondItem="MhW-kG-wGm" secondAttribute="bottom" constant="20" id="dgx-nk-SKo"/>
+                <constraint firstItem="Uya-5g-d2V" firstAttribute="top" secondItem="YDw-nk-LLx" secondAttribute="bottom" constant="20" id="dtQ-j2-9cj"/>
+                <constraint firstItem="BTc-bS-C61" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="ekL-Eo-cdg"/>
+                <constraint firstItem="KwC-C2-2a8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="gfO-Av-BOZ"/>
+                <constraint firstItem="YKe-cK-kCb" firstAttribute="top" secondItem="MhW-kG-wGm" secondAttribute="bottom" constant="20" id="iOK-hc-j0i"/>
+                <constraint firstItem="YDw-nk-LLx" firstAttribute="top" secondItem="6We-FP-Ogt" secondAttribute="bottom" constant="30" id="kEv-kq-oz9"/>
+                <constraint firstAttribute="trailing" secondItem="MhW-kG-wGm" secondAttribute="trailing" constant="10" id="pX1-hZ-JhT"/>
+                <constraint firstAttribute="trailing" secondItem="Uya-5g-d2V" secondAttribute="trailing" constant="10" id="qQI-p1-0j4"/>
+                <constraint firstAttribute="trailing" secondItem="YDw-nk-LLx" secondAttribute="trailing" constant="10" id="rDH-ta-gCK"/>
+                <constraint firstItem="6We-FP-Ogt" firstAttribute="top" secondItem="YKe-cK-kCb" secondAttribute="bottom" constant="15" id="ro9-ju-x20"/>
+                <constraint firstItem="HtX-zM-FK9" firstAttribute="top" secondItem="5uQ-xC-ZPt" secondAttribute="bottom" constant="15" id="vMb-cU-cqc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="382" height="481"/>
@@ -119,6 +148,7 @@
                 <outlet property="contentLabel" destination="KwC-C2-2a8" id="KeM-WA-EfG"/>
                 <outlet property="dateLabel" destination="5uQ-xC-ZPt" id="3nR-ve-sgX"/>
                 <outlet property="moneyLabel" destination="Uya-5g-d2V" id="bFa-uy-J04"/>
+                <outlet property="timeLabel" destination="HtX-zM-FK9" id="XBK-qb-7Ok"/>
                 <outlet property="titleLabel" destination="MhW-kG-wGm" id="XDO-2Y-2HG"/>
                 <outlet property="userLabel" destination="YDw-nk-LLx" id="luw-fD-geP"/>
             </connections>

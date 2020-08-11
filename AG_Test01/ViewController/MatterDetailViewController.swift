@@ -17,6 +17,8 @@ class MatterDetailViewController: UIViewController {
     var receiveTitle: String = ""
     var receiveAddress: String = ""
     var receiveDate: String = ""
+    var receiveStartTime: String = ""
+    var receiveTime:String = ""
     var receiveMoney: String = ""
     var receiveContent: String = ""
     
@@ -60,11 +62,15 @@ class MatterDetailViewController: UIViewController {
                 "matter_Title" : self.receiveTitle,
                 "matter_Address" : self.receiveAddress,
                 "matter_Date" : self.receiveDate,
+                "matter_Start_Time" : self.receiveStartTime,
+                "matter_Time" : self.receiveTime,
                 "matter_Money" : self.receiveMoney,
                 "matter_Content" : self.receiveContent
             ])
             
             self.dismiss(animated: true, completion: nil)
+            
+            
           }))
     }
     
@@ -82,6 +88,7 @@ extension MatterDetailViewController: UICollectionViewDelegate, UICollectionView
                     
         cell.titleLabel.text = receiveTitle
         cell.dateLabel.text = receiveDate
+        cell.timeLabel.text = "\(receiveStartTime)〜(\(receiveTime)h)"
         cell.addressLabel.text = receiveAddress
         cell.moneyLabel.text = "\(receiveMoney)円 / 1h"
         cell.contentLabel.text = receiveContent

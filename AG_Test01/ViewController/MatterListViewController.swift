@@ -17,6 +17,8 @@ class MatterListViewController: UIViewController {
     var postTitle: String = ""
     var postAddress: String = ""
     var postDate: String = ""
+    var postStartTime: String = ""
+    var postTime: String = ""
     var postMoney: String = ""
     var postContent: String = ""
         
@@ -55,10 +57,12 @@ class MatterListViewController: UIViewController {
                     let title = planObject["matter_Title"]
                     let address = planObject["matter_Address"]
                     let date = planObject["matter_Date"]
+                    let startTime = planObject["matter_Start_Time"]
+                    let time = planObject["matter_Time"]
                     let money = planObject["matter_Money"]
                     let content = planObject["matter_Content"]
                         
-                    let matter = MatterModel(Id: id, Title: title as? String, Date: date as? String, Address: address as? String, Money: money as? String, Content: content as? String)
+                    let matter = MatterModel(Id: id, Title: title as? String, Date: date as? String, StartTime: startTime as? String, Time: time as? String, Address: address as? String, Money: money as? String, Content: content as? String)
                     self.matterList.append(matter)
                 }
             }
@@ -77,6 +81,8 @@ extension MatterListViewController: UICollectionViewDelegate, UICollectionViewDa
             postTitle = matter.Title!
             postAddress = matter.Address!
             postDate = matter.Date!
+            postStartTime = matter.StartTime!
+            postTime = matter.Time!
             postMoney = matter.Money!
             postContent = matter.Content!
         }
@@ -90,6 +96,8 @@ extension MatterListViewController: UICollectionViewDelegate, UICollectionViewDa
             vc.receiveTitle = postTitle
             vc.receiveAddress = postAddress
             vc.receiveDate = postDate
+            vc.receiveStartTime = postStartTime
+            vc.receiveTime = postTime
             vc.receiveMoney = postMoney
             vc.receiveContent = postContent
         }
