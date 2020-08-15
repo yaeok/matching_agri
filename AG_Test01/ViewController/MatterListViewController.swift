@@ -42,7 +42,11 @@ class MatterListViewController: UIViewController {
         layout.itemSize = cellSize
         layout.sectionInset = UIEdgeInsets(top: 20, left: 27, bottom: 20, right: 27)
         collectionView.collectionViewLayout = layout
-            
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        matterList.removeAll()
         db.collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
                     
