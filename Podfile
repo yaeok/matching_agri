@@ -6,6 +6,8 @@ target 'AG_Test01' do
   use_frameworks!
 
   # Pods for AG_Test01
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
 

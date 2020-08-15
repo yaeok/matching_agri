@@ -29,6 +29,12 @@
 		39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ED224E020E800FB59C8 /* Utilities.swift */; };
 		39E4B51424E0E542002F4F6D /* MatterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */; };
 		39E4B51524E0E542002F4F6D /* MatterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */; };
+		39ED024A24E7B0DD008D7847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024924E7B0DD008D7847 /* ViewController.swift */; };
+		39ED024C24E7B0F5008D7847 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024B24E7B0F5008D7847 /* SignUpViewController.swift */; };
+		39ED024E24E7B0FD008D7847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024D24E7B0FD008D7847 /* LoginViewController.swift */; };
+		39ED025024E7B1D6008D7847 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024F24E7B1D6008D7847 /* Constants.swift */; };
+		39ED025424E7D83D008D7847 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED025324E7D83D008D7847 /* HomeViewController.swift */; };
+		39ED025624E7F697008D7847 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED025524E7F697008D7847 /* SettingTableViewCell.swift */; };
 		39FB171B24E18AD600AFF851 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		39A04ED224E020E800FB59C8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterCollectionViewCell.swift; sourceTree = "<group>"; };
 		39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatterCollectionViewCell.xib; sourceTree = "<group>"; };
+		39ED024924E7B0DD008D7847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39ED024B24E7B0F5008D7847 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		39ED024D24E7B0FD008D7847 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39ED024F24E7B1D6008D7847 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39ED025324E7D83D008D7847 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39ED025524E7F697008D7847 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DCD16CB0FDA970F8363B5EE /* Pods-AG_Test01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AG_Test01.release.xcconfig"; path = "Target Support Files/Pods-AG_Test01/Pods-AG_Test01.release.xcconfig"; sourceTree = "<group>"; };
 		EEDDB0F33DF099B22C5C90D1 /* Pods_AG_Test01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AG_Test01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +107,7 @@
 		39A04E9D24DFB40B00FB59C8 /* AG_Test01 */ = {
 			isa = PBXGroup;
 			children = (
+				39ED024824E7ADF2008D7847 /* Login */,
 				39A04ED124E020C100FB59C8 /* Helper */,
 				39A04EB424DFB43100FB59C8 /* View */,
 				39A04EB324DFB42800FB59C8 /* Model */,
@@ -142,6 +155,7 @@
 				39A04EC724DFF7DD00FB59C8 /* HistoryTableViewCell.swift */,
 				39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */,
 				39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */,
+				39ED025524E7F697008D7847 /* SettingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,8 +164,20 @@
 			isa = PBXGroup;
 			children = (
 				39A04ED224E020E800FB59C8 /* Utilities.swift */,
+				39ED024F24E7B1D6008D7847 /* Constants.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		39ED024824E7ADF2008D7847 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				39ED024924E7B0DD008D7847 /* ViewController.swift */,
+				39ED024B24E7B0F5008D7847 /* SignUpViewController.swift */,
+				39ED024D24E7B0FD008D7847 /* LoginViewController.swift */,
+				39ED025324E7D83D008D7847 /* HomeViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		86C35D650B4970130BAF59BE /* Frameworks */ = {
@@ -289,18 +315,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39ED025624E7F697008D7847 /* SettingTableViewCell.swift in Sources */,
 				39A04E9F24DFB40B00FB59C8 /* AppDelegate.swift in Sources */,
 				39A04EC224DFF0FE00FB59C8 /* PlanTableViewCell.swift in Sources */,
 				39A04ECE24E007D700FB59C8 /* AccountViewController.swift in Sources */,
 				39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */,
+				39ED024E24E7B0FD008D7847 /* LoginViewController.swift in Sources */,
+				39ED025424E7D83D008D7847 /* HomeViewController.swift in Sources */,
 				39A04EC024DFF09C00FB59C8 /* PlanListViewController.swift in Sources */,
 				39A04EBA24DFB46A00FB59C8 /* MatterListViewController.swift in Sources */,
+				39ED024C24E7B0F5008D7847 /* SignUpViewController.swift in Sources */,
 				39A04ECC24E0019400FB59C8 /* MatterDetailViewController.swift in Sources */,
 				39A04EC824DFF7DD00FB59C8 /* HistoryTableViewCell.swift in Sources */,
 				39A04ECA24DFF7EA00FB59C8 /* HistoryModel.swift in Sources */,
+				39ED024A24E7B0DD008D7847 /* ViewController.swift in Sources */,
 				39A04EB724DFB44C00FB59C8 /* MyCollectionViewCell.swift in Sources */,
 				39A04EBC24DFB47800FB59C8 /* MatterModel.swift in Sources */,
 				39A04EC424DFF10800FB59C8 /* PlanModel.swift in Sources */,
+				39ED025024E7B1D6008D7847 /* Constants.swift in Sources */,
 				39A04EA124DFB40B00FB59C8 /* SceneDelegate.swift in Sources */,
 				39E4B51424E0E542002F4F6D /* MatterCollectionViewCell.swift in Sources */,
 				39A04ED024E01BC400FB59C8 /* PlanDetailViewController.swift in Sources */,

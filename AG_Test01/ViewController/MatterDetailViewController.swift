@@ -8,7 +8,8 @@
 
 import UIKit
 import EventKit
-import Firebase
+import FirebaseCore
+import FirebaseFirestore
 
 class MatterDetailViewController: UIViewController {
     
@@ -44,7 +45,7 @@ class MatterDetailViewController: UIViewController {
         collectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = cellSize
-        layout.sectionInset = UIEdgeInsets(top: 125, left: 30, bottom: 20, right: 30)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 30, bottom: 20, right: 30)
         collectionView.collectionViewLayout = layout
         
         Utilities.styleHelpedButton(helpButton)
