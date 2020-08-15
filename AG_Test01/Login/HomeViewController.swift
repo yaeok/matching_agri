@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Utilities.styleHollowButton(startButton)
+        Utilities.styleFilledButton(startButton)
     }
     
 }
