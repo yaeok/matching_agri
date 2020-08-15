@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EventKit
 import Firebase
 
 class MatterDetailViewController: UIViewController {
@@ -67,11 +68,67 @@ class MatterDetailViewController: UIViewController {
                 "matter_Money" : self.receiveMoney,
                 "matter_Content" : self.receiveContent
             ])
+            let startTime = self.receiveDate + " " + self.receiveStartTime
+            
+            self.check_permission(start_date: self.dateFromString(string: startTime, format: "yyyy/MM/dd HH"), event_name: self.receiveTitle)
             
             self.dismiss(animated: true, completion: nil)
-            
-            
           }))
+    }
+    func dateFromString(string: String, format: String) -> Date {
+        let formatter: DateFormatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.dateFormat = format
+        return formatter.date(from: string)!
+    }
+
+    func check_permission(start_date: Date, event_name: String) {
+        let event_store = EKEventStore()
+        switch EKEventStore.authorizationStatus(for: .event) {
+        
+        case .notDetermined:
+            event_store.requestAccess(to: .event) { (status, error) in
+                if status {
+                    self.innsert_event(store: event_store, start_date: start_date, event_name: event_name)
+
+                } else {
+                    print(error?.localizedDescription)
+                }
+            }
+        case .restricted:
+            print("restricted")
+        case .denied:
+            print("denied")
+        case .authorized:
+            self.innsert_event(store: event_store, start_date: start_date, event_name: event_name)
+        @unknown default:
+            print("Unknown")
+        }
+    }
+    
+    func innsert_event(store: EKEventStore, start_date: Date, event_name: String) {
+        let elapsedTime = Int(self.receiveTime)! * 3600
+        let calendars = store.calendars(for: .event)
+        for calendar in calendars {
+            if calendar.title == "Calendar" {
+                let event = EKEvent(eventStore: store)
+                event.calendar = calendar
+                event.startDate = start_date
+                event.title = event_name
+                event.endDate = event.startDate.addingTimeInterval(TimeInterval(elapsedTime))
+                event.recurrenceRules = [EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil)]
+                let reminder1 = EKAlarm(relativeOffset: -600)
+                let reminder2 = EKAlarm(relativeOffset: -1800)
+                event.alarms = [reminder1, reminder2]
+                
+                do {
+                    try store.save(event, span: .thisEvent)
+                    print("event insert")
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
     
 }
