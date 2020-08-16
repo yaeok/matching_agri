@@ -23,6 +23,7 @@ class AccountViewController: UIViewController {
             if let user = user {
                 let uid = user.uid
                 let email = user.email
+                print(uid)
             }
         }
     }

@@ -16,6 +16,8 @@ class PlanListViewController: UIViewController {
     var postTitle: String = ""
     var postAddress: String = ""
     var postDate: String = ""
+    var postStartTime: String = ""
+    var postTime: String = ""
     var postMoney: String = ""
     var postContent: String = ""
     
@@ -27,8 +29,8 @@ class PlanListViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         planList.removeAll()
         db.collection("swift_users").document("2tVlFv0kXSev9DU6cd8g").collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
@@ -44,10 +46,12 @@ class PlanListViewController: UIViewController {
                     let title = planObject["matter_Title"]
                     let address = planObject["matter_Address"]
                     let date = planObject["matter_Date"]
+                    let startTime = planObject["matter_Start_Time"]
+                    let time = planObject["matter_Time"]
                     let money = planObject["matter_Money"]
                     let content = planObject["matter_Content"]
                     
-                    let plans = PlanModel(Id: id, Title: title as? String, Date: date as? String, Address: address as? String, Money: money as? String, Content: content as? String)
+                    let plans = PlanModel(Id: id, Title: title as? String, Date: date as? String, StartTime: startTime as? String, Time: time as? String, Address: address as? String, Money: money as? String, Content: content as? String)
                     self.planList.append(plans)
                 }
             }
@@ -85,6 +89,8 @@ extension PlanListViewController: UITableViewDelegate, UITableViewDataSource {
             postTitle = plan.Title!
             postAddress = plan.Address!
             postDate = plan.Date!
+            postStartTime = plan.StartTime!
+            postTime = plan.Time!
             postMoney = plan.Money!
             postContent = plan.Content!
         }
@@ -97,6 +103,8 @@ extension PlanListViewController: UITableViewDelegate, UITableViewDataSource {
             vc.receiveTitle = postTitle
             vc.receiveAddress = postAddress
             vc.receiveDate = postDate
+            vc.receiveStartTime = postStartTime
+            vc.receiveTime = postTime
             vc.receiveMoney = postMoney
             vc.receiveContent = postContent
         }

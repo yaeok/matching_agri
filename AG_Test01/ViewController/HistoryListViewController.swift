@@ -21,8 +21,8 @@ class HistoryListViewController: UIViewController {
                 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         hisitoryList.removeAll()
         db.collection("swift_users").document("2tVlFv0kXSev9DU6cd8g").collection("matter_history").order(by: "history_Date").getDocuments{ (snaps, error) in
             if error != nil {

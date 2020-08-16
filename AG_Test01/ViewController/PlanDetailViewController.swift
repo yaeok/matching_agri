@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 
@@ -18,44 +19,69 @@ class PlanDetailViewController: UIViewController {
     var receiveTitle: String = ""
     var receiveAddress: String = ""
     var receiveDate: String = ""
+    var receiveStartTime: String = ""
+    var receiveTime:String = ""
     var receiveMoney: String = ""
     var receiveContent: String = ""
     
     @IBOutlet weak var supportButton: UIButton!
-    let useId = "2tVlFv0kXSev9DU6cd8g"
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var moneyLabel: UILabel!
-    @IBOutlet weak var contentLabel: UILabel!
+    private var cellSize: CGSize {
+        let width = collectionView.bounds.width * 0.9
+        let height = width * PlanCollectionViewCell.aspectRatio
+        return CGSize(width: width, height: height)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        titleLabel.text = receiveTitle
-        dateLabel.text = receiveDate
-        addressLabel.text = receiveAddress
-        moneyLabel.text = receiveMoney
-        contentLabel.text = receiveContent
         
-        Utilities.styleHelpLabel(titleLabel)
-        Utilities.styleHelpLabel(dateLabel)
-        Utilities.styleHelpLabel(addressLabel)
-        Utilities.styleHelpLabel(moneyLabel)
-        Utilities.styleHelpLabel(contentLabel)
+        collectionView.register(PlanCollectionViewCell.nib(), forCellWithReuseIdentifier: PlanCollectionViewCell.identifier)
+            
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = cellSize
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 27, bottom: 20, right: 27)
+        collectionView.collectionViewLayout = layout
+
         Utilities.styleSupportButton(supportButton)
         
     }
     @IBAction func tappedButton(_ sender: Any) {
-        db.collection("swift_users").document(useId).collection("matter_Info").document(receiveId).delete()
+        let user = Auth.auth().currentUser
+        db.collection("swift_users").document(user!.uid).collection("matter_Info").document(receiveId).delete()
         
-        db.collection("swift_users").document(useId).collection("matter_history").addDocument(data: [
+        db.collection("swift_users").document(user!.uid).collection("matter_history").addDocument(data: [
             "history_Title" : receiveTitle,
             "history_Date" : receiveDate,
             "history_Address" : receiveAddress,
+            "history_Start_Time" : receiveStartTime,
+            "history_Time" : receiveTime,
             "history_Money" : receiveMoney,
             "history_Content" : receiveContent
         ])
+    }
+}
+
+extension PlanDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+        
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+        
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlanCollectionViewCell.identifier, for: indexPath) as! PlanCollectionViewCell
+                    
+        cell.titleLabel.text = receiveTitle
+        cell.dateLabel.text = receiveDate
+        cell.timeLabel.text = "\(receiveStartTime)〜(\(receiveTime)h)"
+        cell.addressLabel.text = receiveAddress
+        cell.moneyLabel.text = "\(receiveMoney)円 / 1h"
+        cell.contentLabel.text = receiveContent
+            
+        cell.backgroundColor = UIColor.init(red: 0/255, green: 250/255, blue: 154/255, alpha: 0.4)
+            
+        return cell
     }
 }

@@ -45,8 +45,8 @@ class MatterListViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         matterList.removeAll()
         db.collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
