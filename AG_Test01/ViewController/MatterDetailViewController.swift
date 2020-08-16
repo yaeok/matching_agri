@@ -8,6 +8,7 @@
 
 import UIKit
 import EventKit
+import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 
@@ -25,11 +26,8 @@ class MatterDetailViewController: UIViewController {
     var receiveContent: String = ""
     
     @IBOutlet weak var helpButton: UIButton!
-    
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    let useId = "2tVlFv0kXSev9DU6cd8g"
-    
+        
     private var cellSize: CGSize {
         let width = collectionView.bounds.width * 0.9
         let height = width * MatterCollectionViewCell.aspectRatio
@@ -59,8 +57,8 @@ class MatterDetailViewController: UIViewController {
         self.present(dialog, animated: true, completion: nil)
           dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
             self.db.collection("matter_Info").document(self.receiveId).delete()
-            
-            self.db.collection("swift_users").document(self.useId).collection("matter_Info").addDocument(data: [
+            let user = Auth.auth().currentUser
+            self.db.collection("swift_users").document(user!.uid).collection("matter_Info").addDocument(data: [
                 "matter_Title" : self.receiveTitle,
                 "matter_Address" : self.receiveAddress,
                 "matter_Date" : self.receiveDate,
