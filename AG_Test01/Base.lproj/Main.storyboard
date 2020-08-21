@@ -699,7 +699,7 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1744"/>
         </scene>
-        <!--Setting Table View Controller-->
+        <!--アカウント-->
         <scene sceneID="irr-jS-chN">
             <objects>
                 <tableViewController id="t5f-sK-WjA" customClass="SettingTableViewController" customModule="AG_Test01" customModuleProvider="target" sceneMemberID="viewController">
@@ -821,7 +821,7 @@
                             <outlet property="delegate" destination="t5f-sK-WjA" id="FLU-Rp-bgw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="YUP-3z-ajb"/>
+                    <navigationItem key="navigationItem" title="アカウント" id="YUP-3z-ajb"/>
                     <connections>
                         <outlet property="versionLabel" destination="2E5-i1-RBB" id="QGW-0g-EKS"/>
                     </connections>
@@ -905,9 +905,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xs-y7-qWD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kSj-Vz-Wp2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8e7-eY-Obr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8e7-eY-Obr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.2281674645" green="0.34531637679999999" blue="0.098085450769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
