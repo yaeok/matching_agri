@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DCB6738631AE53CE9FBDEFF /* Pods_AG_Test01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDDB0F33DF099B22C5C90D1 /* Pods_AG_Test01.framework */; };
 		393D9E4D24ECB52E00C9670D /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */; };
+		393D9E5B24EF738D00C9670D /* SettingLogOutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D9E5A24EF738D00C9670D /* SettingLogOutTableViewController.swift */; };
 		39A04E9F24DFB40B00FB59C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04E9E24DFB40B00FB59C8 /* AppDelegate.swift */; };
 		39A04EA124DFB40B00FB59C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EA024DFB40B00FB59C8 /* SceneDelegate.swift */; };
 		39A04EA624DFB40B00FB59C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A04EA424DFB40B00FB59C8 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		393D9E5A24EF738D00C9670D /* SettingLogOutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingLogOutTableViewController.swift; sourceTree = "<group>"; };
 		39A04E9B24DFB40B00FB59C8 /* AG_Test01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AG_Test01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A04E9E24DFB40B00FB59C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39A04EA024DFB40B00FB59C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				39A04ECF24E01BC400FB59C8 /* PlanDetailViewController.swift */,
 				39A04EC524DFF7C100FB59C8 /* HistoryListViewController.swift */,
 				393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */,
+				393D9E5A24EF738D00C9670D /* SettingLogOutTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				39A04E9F24DFB40B00FB59C8 /* AppDelegate.swift in Sources */,
 				39A04EC224DFF0FE00FB59C8 /* PlanTableViewCell.swift in Sources */,
 				39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */,
+				393D9E5B24EF738D00C9670D /* SettingLogOutTableViewController.swift in Sources */,
 				39ED024E24E7B0FD008D7847 /* LoginViewController.swift in Sources */,
 				39ED025424E7D83D008D7847 /* HomeViewController.swift in Sources */,
 				39A04EC024DFF09C00FB59C8 /* PlanListViewController.swift in Sources */,
