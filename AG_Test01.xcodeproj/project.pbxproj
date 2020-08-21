@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DCB6738631AE53CE9FBDEFF /* Pods_AG_Test01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDDB0F33DF099B22C5C90D1 /* Pods_AG_Test01.framework */; };
+		393D9E4D24ECB52E00C9670D /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */; };
 		39A04E9F24DFB40B00FB59C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04E9E24DFB40B00FB59C8 /* AppDelegate.swift */; };
 		39A04EA124DFB40B00FB59C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EA024DFB40B00FB59C8 /* SceneDelegate.swift */; };
 		39A04EA624DFB40B00FB59C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A04EA424DFB40B00FB59C8 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		39A04EC824DFF7DD00FB59C8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EC724DFF7DD00FB59C8 /* HistoryTableViewCell.swift */; };
 		39A04ECA24DFF7EA00FB59C8 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04EC924DFF7EA00FB59C8 /* HistoryModel.swift */; };
 		39A04ECC24E0019400FB59C8 /* MatterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ECB24E0019400FB59C8 /* MatterDetailViewController.swift */; };
-		39A04ECE24E007D700FB59C8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ECD24E007D700FB59C8 /* AccountViewController.swift */; };
 		39A04ED024E01BC400FB59C8 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ECF24E01BC400FB59C8 /* PlanDetailViewController.swift */; };
 		39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A04ED224E020E800FB59C8 /* Utilities.swift */; };
 		39E4B51424E0E542002F4F6D /* MatterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */; };
@@ -34,13 +34,13 @@
 		39ED024E24E7B0FD008D7847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024D24E7B0FD008D7847 /* LoginViewController.swift */; };
 		39ED025024E7B1D6008D7847 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED024F24E7B1D6008D7847 /* Constants.swift */; };
 		39ED025424E7D83D008D7847 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED025324E7D83D008D7847 /* HomeViewController.swift */; };
-		39ED025624E7F697008D7847 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED025524E7F697008D7847 /* SettingTableViewCell.swift */; };
 		39ED025924E8B59E008D7847 /* PlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED025724E8B59E008D7847 /* PlanCollectionViewCell.swift */; };
 		39ED025A24E8B59E008D7847 /* PlanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39ED025824E8B59E008D7847 /* PlanCollectionViewCell.xib */; };
 		39FB171B24E18AD600AFF851 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		39A04E9B24DFB40B00FB59C8 /* AG_Test01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AG_Test01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A04E9E24DFB40B00FB59C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39A04EA024DFB40B00FB59C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +59,6 @@
 		39A04EC724DFF7DD00FB59C8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		39A04EC924DFF7EA00FB59C8 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		39A04ECB24E0019400FB59C8 /* MatterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterDetailViewController.swift; sourceTree = "<group>"; };
-		39A04ECD24E007D700FB59C8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		39A04ECF24E01BC400FB59C8 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
 		39A04ED224E020E800FB59C8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,7 +68,6 @@
 		39ED024D24E7B0FD008D7847 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		39ED024F24E7B1D6008D7847 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		39ED025324E7D83D008D7847 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		39ED025524E7F697008D7847 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		39ED025724E8B59E008D7847 /* PlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCollectionViewCell.swift; sourceTree = "<group>"; };
 		39ED025824E8B59E008D7847 /* PlanCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCollectionViewCell.xib; sourceTree = "<group>"; };
 		39FB171A24E18AD600AFF851 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -135,7 +133,7 @@
 				39A04EBF24DFF09C00FB59C8 /* PlanListViewController.swift */,
 				39A04ECF24E01BC400FB59C8 /* PlanDetailViewController.swift */,
 				39A04EC524DFF7C100FB59C8 /* HistoryListViewController.swift */,
-				39A04ECD24E007D700FB59C8 /* AccountViewController.swift */,
+				393D9E4C24ECB52E00C9670D /* SettingTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -159,7 +157,6 @@
 				39A04EC724DFF7DD00FB59C8 /* HistoryTableViewCell.swift */,
 				39E4B51224E0E542002F4F6D /* MatterCollectionViewCell.swift */,
 				39E4B51324E0E542002F4F6D /* MatterCollectionViewCell.xib */,
-				39ED025524E7F697008D7847 /* SettingTableViewCell.swift */,
 				39ED025724E8B59E008D7847 /* PlanCollectionViewCell.swift */,
 				39ED025824E8B59E008D7847 /* PlanCollectionViewCell.xib */,
 			);
@@ -322,10 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39ED025624E7F697008D7847 /* SettingTableViewCell.swift in Sources */,
 				39A04E9F24DFB40B00FB59C8 /* AppDelegate.swift in Sources */,
 				39A04EC224DFF0FE00FB59C8 /* PlanTableViewCell.swift in Sources */,
-				39A04ECE24E007D700FB59C8 /* AccountViewController.swift in Sources */,
 				39A04ED324E020E800FB59C8 /* Utilities.swift in Sources */,
 				39ED024E24E7B0FD008D7847 /* LoginViewController.swift in Sources */,
 				39ED025424E7D83D008D7847 /* HomeViewController.swift in Sources */,
@@ -342,6 +337,7 @@
 				39ED025024E7B1D6008D7847 /* Constants.swift in Sources */,
 				39A04EA124DFB40B00FB59C8 /* SceneDelegate.swift in Sources */,
 				39E4B51424E0E542002F4F6D /* MatterCollectionViewCell.swift in Sources */,
+				393D9E4D24ECB52E00C9670D /* SettingTableViewController.swift in Sources */,
 				39ED025924E8B59E008D7847 /* PlanCollectionViewCell.swift in Sources */,
 				39A04ED024E01BC400FB59C8 /* PlanDetailViewController.swift in Sources */,
 				39A04EC624DFF7C100FB59C8 /* HistoryListViewController.swift in Sources */,
