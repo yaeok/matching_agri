@@ -37,8 +37,13 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
+        let ud = UserDefaults.standard
+        
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        ud.set(email, forKey: "userEmail")
+        ud.set(password, forKey: "userPassword")
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
