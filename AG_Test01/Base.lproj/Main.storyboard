@@ -757,6 +757,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cuk-KZ-7sl" kind="show" id="vUb-SI-bHW"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uDS-8b-5t5" detailTextLabel="yAL-GU-VU6" style="IBUITableViewCellStyleValue1" id="zph-Fk-1jN">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
@@ -781,6 +784,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="iSF-6S-yXd" kind="show" id="FdX-nU-gt0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -830,7 +836,71 @@
             </objects>
             <point key="canvasLocation" x="2868.115942028986" y="2505.8035714285711"/>
         </scene>
-        <!--Setting Log Out Table View Controller-->
+        <!--ライセンス-->
+        <scene sceneID="tLf-uh-qBO">
+            <objects>
+                <viewController id="cuk-KZ-7sl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xxz-bM-Vcp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8zy-Vh-YgB">
+                                <rect key="frame" x="30" y="138" width="354" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lNS-KB-wJU" firstAttribute="bottom" secondItem="8zy-Vh-YgB" secondAttribute="bottom" id="JIG-sU-cWN"/>
+                            <constraint firstItem="8zy-Vh-YgB" firstAttribute="top" secondItem="lNS-KB-wJU" secondAttribute="top" constant="50" id="TB4-14-Phg"/>
+                            <constraint firstItem="8zy-Vh-YgB" firstAttribute="leading" secondItem="lNS-KB-wJU" secondAttribute="leading" constant="30" id="TMN-CL-63M"/>
+                            <constraint firstItem="lNS-KB-wJU" firstAttribute="trailing" secondItem="8zy-Vh-YgB" secondAttribute="trailing" constant="30" id="tJR-uY-fTW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lNS-KB-wJU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ライセンス" largeTitleDisplayMode="never" id="OfH-1L-Jgq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffO-op-yxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3916" y="2505"/>
+        </scene>
+        <!--利用規約-->
+        <scene sceneID="q1Y-Nt-L3Q">
+            <objects>
+                <viewController id="iSF-6S-yXd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9R-ai-aFF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j4H-Ya-6K5">
+                                <rect key="frame" x="30" y="138" width="354" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="T77-Oy-xSh" firstAttribute="bottom" secondItem="j4H-Ya-6K5" secondAttribute="bottom" id="1KP-if-biM"/>
+                            <constraint firstItem="T77-Oy-xSh" firstAttribute="trailing" secondItem="j4H-Ya-6K5" secondAttribute="trailing" constant="30" id="61l-r7-iNt"/>
+                            <constraint firstItem="j4H-Ya-6K5" firstAttribute="top" secondItem="T77-Oy-xSh" secondAttribute="top" constant="50" id="N8D-kr-5If"/>
+                            <constraint firstItem="j4H-Ya-6K5" firstAttribute="leading" secondItem="T77-Oy-xSh" secondAttribute="leading" constant="30" id="iGj-QE-BQz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T77-Oy-xSh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用規約" largeTitleDisplayMode="never" id="sG5-Ff-gXy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQe-M2-6bP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3916" y="3323"/>
+        </scene>
+        <!--LogOut-->
         <scene sceneID="abe-IO-68F">
             <objects>
                 <tableViewController id="416-IV-wNt" customClass="SettingLogOutTableViewController" customModule="AG_Test01" customModuleProvider="target" sceneMemberID="viewController">
@@ -839,10 +909,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
-                            <tableViewSection headerTitle="ログアウト" id="twB-oN-q0u">
+                            <tableViewSection id="twB-oN-q0u">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ml2-OL-mw0">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="18" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ml2-OL-mw0" id="Gjn-19-d99">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -875,11 +945,11 @@
                             <outlet property="delegate" destination="416-IV-wNt" id="Qsb-Pj-6YK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="nLx-0m-61O"/>
+                    <navigationItem key="navigationItem" title="LogOut" largeTitleDisplayMode="never" id="nLx-0m-61O"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQQ-Nx-1li" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3783" y="2505"/>
+            <point key="canvasLocation" x="3916" y="4195"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="63D-bd-JBz">
