@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="案件" largeTitleDisplayMode="always" id="pdE-h7-y0d"/>
                     <connections>
                         <outlet property="collectionView" destination="eaa-T0-Bg2" id="m1a-FP-k7U"/>
-                        <segue destination="16m-oM-eQK" kind="push" identifier="Next" id="eXP-48-cVC"/>
+                        <segue destination="16m-oM-eQK" kind="show" identifier="Next" id="EsE-wT-edt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -496,7 +496,7 @@
                     <tabBarItem key="tabBarItem" title="案件" id="Mpz-T3-wxz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lJ6-f9-lfT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="107"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="30"/>
@@ -660,7 +660,7 @@
                     <tabBarItem key="tabBarItem" title="予定" id="5tL-mA-SkZ" userLabel="Item"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4xU-Wc-jqq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="107"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="30"/>
@@ -976,7 +976,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="kSj-Vz-Wp2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8e7-eY-Obr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="0.2281674645" green="0.34531637679999999" blue="0.098085450769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -71,7 +71,6 @@ class MatterDetailViewController: UIViewController {
             
             self.check_permission(start_date: self.dateFromString(string: startTime, format: "yyyy/MM/dd HH"), event_name: self.receiveTitle)
             
-            self.dismiss(animated: true, completion: nil)
           }))
     }
     func dateFromString(string: String, format: String) -> Date {
