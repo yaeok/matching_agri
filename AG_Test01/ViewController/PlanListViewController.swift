@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 
@@ -32,7 +33,8 @@ class PlanListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         planList.removeAll()
-        db.collection("swift_users").document("2tVlFv0kXSev9DU6cd8g").collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
+        let user = Auth.auth().currentUser
+        db.collection("swift_users").document((user?.uid)!).collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
                 
             } else {
