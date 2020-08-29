@@ -493,10 +493,10 @@
         <scene sceneID="Xcu-mq-Jsk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jQN-hb-3uv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="案件" selectedImage="paperplane.fill" catalog="system" id="Mpz-T3-wxz"/>
+                    <tabBarItem key="tabBarItem" title="案件" image="paperplane.fill" catalog="system" landscapeImage="paperplane.fill" selectedImage="paperplane.fill" id="Mpz-T3-wxz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lJ6-f9-lfT">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="107"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="30"/>
@@ -657,7 +657,7 @@
         <scene sceneID="rKk-fO-Hmz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jUi-EO-Gh8" userLabel="Item" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="予定" selectedImage="calendar" catalog="system" id="5tL-mA-SkZ" userLabel="Item"/>
+                    <tabBarItem key="tabBarItem" title="予定" image="calendar" catalog="system" landscapeImage="calendar" selectedImage="calendar" id="5tL-mA-SkZ" userLabel="Item"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4xU-Wc-jqq">
                         <rect key="frame" x="0.0" y="44" width="414" height="107"/>
@@ -680,7 +680,7 @@
         <scene sceneID="iHu-l0-QKO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zUj-SH-3oQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="実績" selectedImage="book.fill" catalog="system" id="jYU-PC-bMg"/>
+                    <tabBarItem key="tabBarItem" title="実績" image="book.fill" catalog="system" landscapeImage="book.fill" selectedImage="book.fill" id="jYU-PC-bMg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rU8-9l-ea7">
                         <rect key="frame" x="0.0" y="44" width="414" height="107"/>
@@ -973,7 +973,7 @@
         <scene sceneID="v7g-tN-L7w">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xs-y7-qWD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="アカウント" selectedImage="person.2.fill" catalog="system" id="kSj-Vz-Wp2"/>
+                    <tabBarItem key="tabBarItem" title="アカウント" image="person.2.fill" catalog="system" landscapeImage="person.2.fill" selectedImage="person.2.fill" id="kSj-Vz-Wp2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8e7-eY-Obr">
                         <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
