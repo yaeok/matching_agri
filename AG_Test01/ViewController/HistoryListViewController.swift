@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 
@@ -15,7 +16,8 @@ class HistoryListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        db.collection("swift_users").document("2tVlFv0kXSev9DU6cd8g").collection("matter_history").order(by: "history_Date").getDocuments{ (snaps, error) in
+        let user = Auth.auth().currentUser
+        db.collection("swift_users").document(user!.uid).collection("matter_history").order(by: "history_Date").getDocuments{ (snaps, error) in
             if error != nil {
                 
             } else {
