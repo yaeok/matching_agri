@@ -1,11 +1,3 @@
-//
-//  HistoryListViewController.swift
-//  AG_Test01
-//
-//  Created by Kohei Yaeo on 2020/08/09.
-//  Copyright © 2020 Kohei Yaeo. All rights reserved.
-//
-
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
@@ -23,7 +15,6 @@ class HistoryListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        hisitoryList.removeAll()
         db.collection("swift_users").document("2tVlFv0kXSev9DU6cd8g").collection("matter_history").order(by: "history_Date").getDocuments{ (snaps, error) in
             if error != nil {
                 
@@ -44,6 +35,11 @@ class HistoryListViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        hisitoryList.removeAll()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

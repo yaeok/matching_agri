@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  AG_Test01
-//
-//  Created by Kohei Yaeo on 2020/08/15.
-//  Copyright © 2020 Kohei Yaeo. All rights reserved.
-//
-
 import UIKit
 import FirebaseAuth
 
@@ -19,7 +11,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setUpElements()
     }
     

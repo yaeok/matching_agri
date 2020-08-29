@@ -1,11 +1,3 @@
-//
-//  MatterListViewController.swift
-//  AG_Test01
-//
-//  Created by Kohei Yaeo on 2020/08/09.
-//  Copyright © 2020 Kohei Yaeo. All rights reserved.
-//
-
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
@@ -47,7 +39,6 @@ class MatterListViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        matterList.removeAll()
         db.collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
                     
@@ -73,6 +64,11 @@ class MatterListViewController: UIViewController {
             }
             self.collectionView.reloadData()
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        matterList.removeAll()
     }
 }
 

@@ -1,11 +1,3 @@
-//
-//  PlanListViewController.swift
-//  AG_Test01
-//
-//  Created by Kohei Yaeo on 2020/08/09.
-//  Copyright © 2020 Kohei Yaeo. All rights reserved.
-//
-
 import UIKit
 import FirebaseAuth
 import FirebaseCore
@@ -32,7 +24,6 @@ class PlanListViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        planList.removeAll()
         let user = Auth.auth().currentUser
         db.collection("swift_users").document((user?.uid)!).collection("matter_Info").order(by: "matter_Date").getDocuments{ (snaps, error) in
             if error != nil {
@@ -59,6 +50,11 @@ class PlanListViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        planList.removeAll()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

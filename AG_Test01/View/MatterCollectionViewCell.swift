@@ -1,11 +1,3 @@
-//
-//  MatterCollectionViewCell.swift
-//  AG_Test01
-//
-//  Created by Kohei Yaeo on 2020/08/10.
-//  Copyright © 2020 Kohei Yaeo. All rights reserved.
-//
-
 import UIKit
 
 class MatterCollectionViewCell: UICollectionViewCell {
